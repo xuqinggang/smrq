@@ -1,0 +1,44 @@
+{
+  "name": "smrq",
+  "version": "1.0.0",
+  "description": "一个简洁的http请求库，适用于浏览器和node",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c scripts/rollup.config.js",
+    "webpack": "NODE_ENV=production webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuqinggang/smrq.git"
+  },
+  "keywords": [
+    "http",
+    "xhr",
+    "node http"
+  ],
+  "author": "xuqinggang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuqinggang/smrq/issues"
+  },
+  "homepage": "https://github.com/xuqinggang/smrq#readme",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "eslint-config-app": "^1.0.2",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "the-answer": "^1.0.0",
+    "webpack": "^3.11.0"
+  },
+  "browser": {
+    "./foo2.js": "./foo1.js"
+  },
+  "dependencies": {
+    "base64-encode-string": "^1.0.0",
+    "rollup-plugin-flow": "^1.1.1"
+  }
+}
